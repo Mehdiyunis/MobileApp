@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #1847b8;
+
+}
+
+header > #library{
+    display: inline-block;
+    width: fit-content;
+    height: 100%;
+    text-align: right;
+}
+
+header > #library > ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+
+}
+
+header > #library > ul > li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header > #library > ul > li > a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 30px 15px;
+    text-transform: capitalize;
+    font-size: 1.253rem;
+    font-weight: bold;
+    transition: all .3s;
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
+}
+
+header > #library > ul > li > a:hover{
+    color: #1847b8;
+    background-color: white;
+}
+
+header > #logo{
+    display: inline-block;
+    width: fit-content;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+}
+
+header > #logo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+#divfreepik{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://ychef.files.bbci.co.uk/976x549/p0982k70.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    padding: 40px;
+
+}
+
+#divfreepik > #divfreepikapp{
+    display: inline-block;
+    width: 50%;
+    height: 100%;      /* içindekileri aşaqı sala bilmədim */
+    color: white;
+}
+
+#divfreepik > #divfreepikapp h1{
+    font-size: 4.0625rem;
+    margin-top: 350px;
+    font-weight: 700;
+}
+
+#divfreepik > #divfreepikapp > p {
+    word-spacing: 3.5px;
+    letter-spacing: 1.65px;
+}
+
+#divfreepik > #divfreepikapp > p > a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white ;
+}
+
+#divfreepik > #divfreepikapp > p > a:hover{
+    border:none;
+}
+
+#divfreepik > #divfreepikcart{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+
+}
+
+#divfreepik > #divfreepikcart > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#divfreepik > #divfreepikcart > div > div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+#divfreepik > #divfreepikcart > div > div > svg{
+    width: 100%;
+    height: 100%;  /* 70% verib otalamaq isdedim alınmadı */
+}
+
+#super-awesome{
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+    
+}
+
+
+#super-awesome > #super-awesomehead{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+#super-awesome > #super-awesomehead > h2{
+    height: 100px;
+    font-size: 3.75rem;
+    line-height: 1.1;
+    font-weight: 400;
+    color: black;
+    display: block;
+
+}
+
+#super-awesome > #super-awesomehead > p{
+    font-family: 'Open Sans', sans-serif;
+    word-wrap: break-word;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: black;
+    display: block;
+}
+
+#super-awesome > #cards{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+#super-awesome > #cards > .card{
+    display: inline-block;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px 0;
+    padding: 30px;
+}
+
+#super-awesome > #cards > .card > h5{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: inherit;
+    margin-bottom: 30px;
+}
+
+#super-awesome > #cards > .card > p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#super-awesome > #cards > .card > svg{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 20px;
+    vertical-align: top;
+}
+
+#ux{
+    background-color: white;
+    padding: 60px 8%;
+
+}
+
+#ux_content{
+    background-color: #1847b8;
+    padding: 50px;
+    max-width: 1000px;
+
+}
+
+#ux_content_h3, 
+#ux_content_p,
+#ux_content_a{
+    width: 55%;
+    color: white;
+}
+
+#ux_content_h3{
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+#ux_content_p{
+    font-size: 1.125rem;
+    margin: 28px 0 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+#ux_content_p_a{
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+#ux_content_p_a:hover{
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
